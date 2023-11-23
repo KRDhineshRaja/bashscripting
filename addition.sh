@@ -9,5 +9,5 @@ read n2
 
 result=$((n1 + n2))
 
-echo "The total vaulue is :$result"
+echo "The sum of total vaulue is :$result"
 
