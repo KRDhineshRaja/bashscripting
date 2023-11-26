@@ -1,22 +1,30 @@
 # ! /bin/bash
 
-echo  "Enter the first number: "
-read VAR1
-echo  "Enter the second number: "
-read VAR2
-echo  "Enter the third number: "
-read VAR3
+echo  "Enter a grade (A, B, C, D, or F): "
+read grade
 
-if [[ $VAR1 -ge $VAR2 ]] && [[ $VAR1 -ge $VAR3 ]]
-then
-  echo "$VAR1 is the largest number."
+if [[ $grade == "A" || $grade == "a" ]]; then
 
-elif [[ $VAR2 -ge $VAR1 ]] && [[ $VAR2 -ge $VAR3 ]]
-then
-  echo "$VAR2 is the largest number."
+    echo "Excellent!"
+
+elif [[ $grade == "B" || $grade == "b" ]]; then
+
+    echo "Good job!"
+
+elif [[ $grade == "C" || $grade == "c" ]]; then
+
+    echo "You passed."
+
+elif [[ $grade == "D" || $grade == "d" ]]; then
+
+    echo "You need improvement."
+
+elif [[ $grade == "F" || $grade == "f" ]]; then
+
+    echo "You failed."
 
 else
-echo "$VAR3 is the largest number."
+    echo "Invalid grade entered, Please enter correctly"
 
 
 fi
