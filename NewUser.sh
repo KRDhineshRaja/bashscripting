@@ -4,7 +4,7 @@
 echo "Enter the name:"
 read uname
 
-pcho "Enter the password:"
+echo "Enter the password:"
 read -sp pw  
 
 echo "Welcome $uname! The file is created for you"
